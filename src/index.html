@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenSana – Empowering Health Data</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header.hero {
+      background: linear-gradient(to right, #4CAF50, #8BC34A);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #4CAF50;
+      border-radius: 4px;
+      text-decoration: none;
+      margin: 0.5rem;
+      font-weight: bold;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+    section {
+      padding: 3rem 0;
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+    li strong {
+      color: #4CAF50;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+    }
+    form input[type="email"] {
+      padding: 0.5rem;
+      width: 250px;
+      margin-right: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 0.5rem 1rem;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .btn, form input, form button {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="container">
+    <h1>OpenSana</h1>
+    <p>An open-source platform to empower health data systems in low-resource regions.</p>
+    <a href="#about" class="btn">Learn More</a>
+    <a href="#contact" class="btn btn-outline">Contact Us</a>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container">
+  <h2>Our Mission</h2>
+  <p>We believe that access to health data should not be limited by geography or resources. OpenSana aims to bridge the gap between complex data analysis and real-world healthcare delivery in developing countries.</p>
+
+  <h3>What is OpenSana?</h3>
+  <p>OpenSana is an open-source platform designed to help governments and local health systems collect, analyze, and visualize public health data in regions with limited infrastructure.</p>
+</section>
+
+<!-- How It Helps Section -->
+<section class="container">
+  <h2>How OpenSana Helps People and Communities</h2>
+  <p>Many communities struggle with outdated tools, poor connectivity, and fragmented data sources. This makes it hard for decision-makers to respond effectively to outbreaks, track disease trends, or allocate medical supplies where they're needed most.</p>
+
+  <ul>
+    <li><strong>For Healthcare Workers:</strong> Easy-to-use dashboards give frontline workers instant insights into patient care, supply needs, and outbreak patterns — even without internet access.</li>
+    <li><strong>For Governments:</strong> Enables better planning and resource allocation through centralized, standardized data collection across multiple clinics and districts.</li>
+    <li><strong>For NGOs:</strong> Supports faster response times during emergencies by integrating existing health data systems and automating reporting workflows.</li>
+    <li><strong>For Researchers:</strong> Provides a unified interface to explore trends and generate reports that can inform policy decisions and academic studies.</li>
+  </ul>
+</section>
+
+<!-- Features Section -->
+<section class="container">
+  <h2>Key Features</h2>
+  <ul>
+    <li><strong>Offline-first:</strong> Works without internet connection</li>
+    <li><strong>Lightweight:</strong> Runs on Raspberry Pi</li>
+    <li><strong>ETL automation:</strong> Powered by Apache Airflow</li>
+    <li><strong>Data Visualization:</strong> Dashboards via Dash/Pandas</li>
+    <li><strong>Integration-ready:</strong> Supports DHIS2, FHIR, OpenMRS</li>
+  </ul>
+</section>
+
+<!-- Why OpenSana Section -->
+<section class="container">
+  <h2>Why OpenSana?</h2>
+  <p>Many platforms require high-speed internet, powerful hardware, and expensive licenses. OpenSana was built differently — from the ground up for the realities of low-resource environments.</p>
+  <ul>
+    <li><strong>Built for Offline Use:</strong> Designed to function reliably in areas with unstable or no internet access.</li>
+    <li><strong>Low Cost & Lightweight:</strong> Can run on affordable hardware like Raspberry Pi, making it accessible to small clinics and rural facilities.</li>
+    <li><strong>Automated Workflows:</strong> Reduces manual data entry and errors with smart ETL pipelines powered by Apache Airflow.</li>
+    <li><strong>Flexible Integration:</strong> Connects seamlessly with major global health systems, allowing easy adoption and scalability.</li>
+    <li><strong>Community-Driven:</strong> Fully open-source, with active collaboration from developers, public health experts, and local partners.</li>
+  </ul>
+</section>
+
+<!-- Roadmap Section -->
+<section class="container">
+  <h2>Roadmap</h2>
+  <ol>
+    <li><strong>Phase 1:</strong> Planning & Requirements – Define MVP features, identify pilot regions, set up repository and documentation</li>
+    <li><strong>Phase 2:</strong> Core Development – Build ETL pipeline with Apache Airflow, develop dashboard with Dash, add support for CSV, JSON, APIs</li>
+    <li><strong>Phase 3:</strong> Pilot Testing – Deploy in partner regions, collect feedback, optimize performance</li>
+    <li><strong>Phase 4:</strong> Community Launch – Publish documentation, create tutorials, invite contributors</li>
+  </ol>
+</section>
+
+<!-- Future Vision Section -->
+<section class="container">
+  <h2>Future Vision</h2>
+  <p>As OpenSana grows, we envision expanding beyond data visualization into broader digital health solutions:</p>
+  <ul>
+    <li><strong>Predictive Analytics:</strong> Using machine learning models to forecast disease outbreaks and treatment outcomes.</li>
+    <li><strong>Mobile Data Entry:</strong> Enabling offline-friendly mobile apps for field workers to submit data directly into the system.</li>
+    <li><strong>AI-Powered Alerts:</strong> Automatically flagging anomalies in real-time for early detection of health threats.</li>
+    <li><strong>Multi-Language Support:</strong> Supporting diverse populations and local languages for wider adoption.</li>
+    <li><strong>Global Partnerships:</strong> Working with international organizations to scale impact across continents.</li>
+  </ul>
+</section>
+
+<!-- Get Involved Section -->
+<section class="container">
+  <h2>Join Our Community</h2>
+  <p>We’re building OpenSana as a community-driven project. Whether you're a developer, public health professional, or advocate, your contribution matters.</p>
+  <ul>
+    <li>✅ Contribute code</li>
+    <li>✅ Help with documentation</li>
+    <li>✅ Test the system in your region</li>
+  </ul>
+  <a href="https://github.com/your-github-repo" target="_blank" class="btn">GitHub Repository</a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <p>Stay updated with our progress or get involved in early testing.</p>
+  <form action="#" method="POST">
+    <input type="email" name="email" placeholder="Your email address" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  <p>Email us at: <a href="mailto:team@opensana.org">team@opensana.org</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 OpenSana. All rights reserved.</p>
+  <p><a href="https://github.com/your-github-repo" target="_blank">GitHub</a> | <a href="mailto:team@opensana.org">Contact</a></p>
+</footer>
+
+</body>
+</html>
