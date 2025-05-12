@@ -1,6 +1,6 @@
 # OpenSana
 
-[![License](https://img.shields.io/github/license/yourname/opensana )](https://opensource.org/licenses/MIT )
+[![License](https://img.shields.io/github/license/greggubarev/opensana )](https://opensource.org/licenses/MIT )
 
 OpenSana is an open-source platform designed to help governments and local health systems collect, analyze, and visualize public health data in regions with limited infrastructure.
 
