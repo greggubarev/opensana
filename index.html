@@ -31,6 +31,7 @@
   <title>OpenSana – Empowering Health Data Systems in Low-Resource Regions</title>
 
   <style>
+    /* Base Styles */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -38,86 +39,163 @@
       color: #333;
       background-color: #f9f9f9;
     }
-
+    
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-
-    header.hero {
-      background: linear-gradient(to right, #e8f5e9, #e0f2f1); /* светло-зелёный градиент */
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #e8f5e9, #e0f2f1); /* Light green gradient */
       color: #2e7d32;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
     }
-
-    header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 3rem;
+    
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo-wrapper {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .logo-wrapper:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+    
+    .site-logo {
+      max-width: 140px;
+      height: auto;
+      display: block;
+    }
+    
+    /* Title and Subtitle */
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin: 0;
       color: #1b5e20;
     }
-
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
+    
+    .hero-text p {
+      font-size: 1.1rem;
       color: #388e3c;
+      margin-top: 0.5rem;
+      max-width: 600px;
     }
-
+    
+    /* Buttons */
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
     .btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
-      background: #2196F3;
+      background: #2196F3; /* Primary blue */
       color: white;
       border-radius: 4px;
       text-decoration: none;
-      margin: 0.5rem;
       font-weight: bold;
       transition: background 0.3s ease;
     }
-
+    
     .btn:hover {
       background: #1976D2;
     }
-
+    
     .btn-outline {
       background: transparent;
       border: 2px solid #2196F3;
       color: #2196F3;
     }
-
+    
     .btn-outline:hover {
       background: #bbdefb;
       color: #1976D2;
     }
-
+    
+    /* Sections */
     section {
       padding: 3rem 0;
     }
-
+    
+    h2, h3 {
+      color: #1b5e20;
+    }
+    
     ul, ol {
       padding-left: 1.5rem;
     }
-
+    
     li strong {
       color: #2196F3;
     }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #eee;
+    
+    /* Features & Benefits */
+    .features li,
+    .why-open-sana li,
+    .expertise li {
+      margin-bottom: 0.5rem;
     }
-
-    form input[type="email"] {
+    
+    /* Roadmap */
+    ol {
+      counter-reset: section;
+    }
+    ol li {
+      list-style: none;
+      counter-increment: section;
+    }
+    ol li::before {
+      content: "Phase " counter(section) ":";
+      font-weight: bold;
+      margin-right: 0.5rem;
+      color: #2196F3;
+    }
+    
+    /* About & Mission */
+    #about h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Get Involved */
+    .community ul {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Contact Section */
+    #contact form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    
+    #contact input[type="email"] {
       padding: 0.5rem;
       width: 250px;
-      margin-right: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
-
-    form button {
+    
+    #contact button {
       padding: 0.5rem 1rem;
       background: #2196F3;
       color: white;
@@ -125,59 +203,62 @@
       border-radius: 4px;
       cursor: pointer;
     }
-
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      font-size: 0.95rem;
+    }
+    
+    footer a {
+      color: #2196F3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* Responsive */
     @media (max-width: 600px) {
-      .btn, form input, form button {
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+    
+      .btn,
+      form input,
+      form button {
         width: 100%;
         margin-top: 0.5rem;
       }
+    
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
     }
-
-    /* Логотип */
-    .logo-wrapper {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 10px 14px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      transition: all 0.3s ease;
-      margin-bottom: 1.5rem;
-    }
-
-    .logo-wrapper:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    }
-
-    .site-logo {
-      max-width: 160px;
-      height: auto;
-      display: block;
-    }
-
   </style>
 </head>
 <body>
 
 <!-- Hero Section -->
 <header class="hero">
-  <div class="container">
-    
+  <div class="container hero-content">
     <!-- Логотип -->
     <div class="logo-wrapper">
       <img src="assets/logo.png" alt="OpenSana Logo" class="site-logo">
     </div>
 
-    <!-- Заголовок -->
-    <h1>OpenSana</h1>
-    
-    <!-- Подзаголовок -->
-    <p>An open-source platform to empower health data systems in low-resource regions.</p>
-    
+    <!-- Заголовок и подзаголовок -->
+    <div class="hero-text">
+      <h1>OpenSana</h1>
+      <p>An open-source platform to empower health data systems in low-resource regions.</p>
+    </div>
+
     <!-- Кнопки -->
-    <a href="#about" class="btn">Learn More</a>
-    <a href="#contact" class="btn btn-outline">Contact Us</a>
-    
+    <div class="hero-buttons">
+      <a href="#about" class="btn">Learn More</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
   </div>
 </header>
 
