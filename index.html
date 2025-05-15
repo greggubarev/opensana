@@ -11,14 +11,14 @@
   <link rel="icon" href="assets/icon.png" type="image/png">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto :wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="OpenSana – Empowering Health Data Systems in Low-Resource Regions">
   <meta property="og:description" content="OpenSana is an open-source platform to help governments and NGOs collect, analyze, and visualize public health data in low-infrastructure environments.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://opensana.org">
-  <meta property="og:image" content="https://opensana.org/assets/logo5.png">
+  <meta property="og:url" content="https://opensana.org ">
+  <meta property="og:image" content="https://opensana.org/assets/logo5.png ">
   <meta property="og:site_name" content="OpenSana">
 
   <!-- Twitter Card -->
@@ -26,7 +26,7 @@
   <meta name="twitter:site" content="@opensana">
   <meta name="twitter:title" content="OpenSana – Empowering Health Data Systems in Low-Resource Regions">
   <meta name="twitter:description" content="An open-source platform for health data collection, analysis, and visualization in low-resource environments.">
-  <meta name="twitter:image" content="https://opensana.org/assets/logo5.png">
+  <meta name="twitter:image" content="https://opensana.org/assets/logo5.png ">
 
   <title>OpenSana – Empowering Health Data Systems in Low-Resource Regions</title>
 
@@ -39,28 +39,28 @@
       color: #333;
       background-color: #f9f9f9;
     }
-    
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-    
+
     /* Hero Section */
     .hero {
-      background: linear-gradient(to right, #e8f5e9, #e0f2f1); /* Light green gradient */
+      background: linear-gradient(to right, #e8f5e9, #e0f2f1);
       color: #2e7d32;
       text-align: center;
       padding: 5rem 2rem;
     }
-    
+
     .hero-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    
+
     .logo-wrapper {
       background: rgba(255, 255, 255, 0.95);
       padding: 16px;
@@ -69,32 +69,32 @@
       margin-bottom: 1.5rem;
       transition: all 0.3s ease;
     }
-    
+
     .logo-wrapper:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     }
-    
+
     .site-logo {
       max-width: 140px;
       height: auto;
       display: block;
     }
-    
+
     /* Title and Subtitle */
     .hero-text h1 {
       font-size: 2.8rem;
       margin: 0;
       color: #1b5e20;
     }
-    
+
     .hero-text p {
       font-size: 1.1rem;
       color: #388e3c;
       margin-top: 0.5rem;
       max-width: 600px;
     }
-    
+
     /* Buttons */
     .hero-buttons {
       margin-top: 2rem;
@@ -103,107 +103,115 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-    
+
     .btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
-      background: #2196F3; /* Primary blue */
+      background: #2196F3;
       color: white;
       border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s ease;
     }
-    
+
     .btn:hover {
       background: #1976D2;
     }
-    
+
     .btn-outline {
       background: transparent;
       border: 2px solid #2196F3;
       color: #2196F3;
     }
-    
+
     .btn-outline:hover {
       background: #bbdefb;
       color: #1976D2;
     }
-    
+
     /* Sections */
     section {
       padding: 3rem 0;
     }
-    
+
     h2, h3 {
       color: #1b5e20;
     }
-    
+
     ul, ol {
       padding-left: 1.5rem;
     }
-    
+
     li strong {
       color: #2196F3;
     }
-    
+
     /* Features & Benefits */
     .features li,
     .why-open-sana li,
     .expertise li {
       margin-bottom: 0.5rem;
     }
-    
+
     /* Roadmap */
     ol {
       counter-reset: section;
     }
+
     ol li {
       list-style: none;
       counter-increment: section;
     }
+
     ol li::before {
       content: "Phase " counter(section) ":";
       font-weight: bold;
       margin-right: 0.5rem;
       color: #2196F3;
     }
-    
+
     /* About & Mission */
     #about h3 {
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
     }
-    
+
     /* Get Involved */
     .community ul {
       margin-bottom: 1.5rem;
     }
-    
+
     /* Contact Section */
     #contact form {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       gap: 0.5rem;
-      justify-content: center;
+      width: 100%;
     }
-    
+
     #contact input[type="email"] {
       padding: 0.5rem;
-      width: 250px;
+      width: 100%;
+      max-width: 300px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      font-size: 1rem;
     }
-    
-    #contact button {
+
+    #contact button[type="submit"] {
       padding: 0.5rem 1rem;
       background: #2196F3;
       color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 300px;
     }
-    
+
     /* Footer */
     footer {
       text-align: center;
@@ -211,29 +219,36 @@
       background: #eee;
       font-size: 0.95rem;
     }
-    
+
     footer a {
       color: #2196F3;
       text-decoration: none;
       font-weight: bold;
     }
-    
+
     /* Responsive */
     @media (max-width: 600px) {
       .hero-text h1 {
         font-size: 2.2rem;
       }
-    
-      .btn,
-      form input,
-      form button {
-        width: 100%;
-        margin-top: 0.5rem;
-      }
-    
+
+      .hero-buttons,
+      .community ul,
       .hero-buttons {
         flex-direction: column;
         align-items: center;
+      }
+
+      .btn,
+      #contact input[type="email"],
+      #contact button[type="submit"] {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 0.5rem;
+      }
+
+      .hero-buttons .btn {
+        text-align: center;
       }
     }
   </style>
@@ -247,13 +262,11 @@
     <div class="logo-wrapper">
       <img src="assets/logo5.png" alt="OpenSana Logo" class="site-logo">
     </div>
-
     <!-- Заголовок и подзаголовок -->
     <div class="hero-text">
       <h1>OpenSana</h1>
       <p>An open-source platform to empower health data systems in low-resource regions.</p>
     </div>
-
     <!-- Кнопки -->
     <div class="hero-buttons">
       <a href="#about" class="btn">Learn More</a>
@@ -266,7 +279,6 @@
 <section id="about" class="container">
   <h2>Our Mission</h2>
   <p>We believe that access to health data should not be limited by geography or resources. OpenSana aims to bridge the gap between complex data analysis and real-world healthcare delivery in developing countries.</p>
-
   <h3>What is OpenSana?</h3>
   <p>OpenSana is an open-source platform designed to help governments and local health systems collect, analyze, and visualize public health data in regions with limited infrastructure. Built for offline use and lightweight deployment, it supports modern health data standards like DHIS2, FHIR, and OpenMRS.</p>
 </section>
@@ -275,7 +287,6 @@
 <section class="container">
   <h2>How OpenSana Helps People and Communities</h2>
   <p>Many communities struggle with outdated tools, poor connectivity, and fragmented data sources. This makes it hard for decision-makers to respond effectively to outbreaks, track disease trends, or allocate medical supplies where they're needed most.</p>
-
   <ul>
     <li><strong>For Healthcare Workers:</strong> Easy-to-use dashboards give frontline workers instant insights into patient care, supply needs, and outbreak patterns — even without internet access.</li>
     <li><strong>For Governments:</strong> Enables better planning and resource allocation through centralized, standardized data collection across multiple clinics and districts.</li>
@@ -341,24 +352,27 @@
     <li>✅ Help with documentation</li>
     <li>✅ Test the system in your region</li>
   </ul>
-  <a href="https://github.com/greggubarev/opensana/" target="_blank" class="btn">GitHub Repository</a>
+  <a href="https://github.com/greggubarev/opensana/ " target="_blank" class="btn">GitHub Repository</a>
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="container">
   <h2>Contact Us</h2>
   <p>Stay updated with our progress or get involved in early testing.</p>
-  <form action="#" method="POST">
+
+  <!-- Подписка через mailto -->
+  <form action="#" method="GET">
     <input type="email" name="email" placeholder="Your email address" required />
-    <button type="submit">Subscribe</button>
+    <button type="submit" onclick="window.location.href='mailto:team@opensana.org?subject=OpenSana Subscription&body=Hello OpenSana Team, I would like to stay updated about your progress.'">Subscribe</button>
   </form>
+
   <p>Email us at: <a href="mailto:team@opensana.org">team@opensana.org</a></p>
 </section>
 
 <!-- Footer -->
 <footer>
   <p>&copy; 2025 OpenSana. All rights reserved.</p>
-  <p><a href="https://github.com/greggubarev/opensana/" target="_blank">GitHub</a> | <a href="mailto:team@opensana.org">Contact</a></p>
+  <p><a href="https://github.com/greggubarev/opensana/ " target="_blank">GitHub</a> | <a href="mailto:team@opensana.org">Contact</a></p>
 </footer>
 
 </body>
