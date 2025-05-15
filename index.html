@@ -48,7 +48,7 @@
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(to right, #e8f5e9, #e0f2f1);
+      background: linear-gradient(to right, #e8f5e9, #e0f2f1); /* Light green gradient */
       color: #2e7d32;
       text-align: center;
       padding: 5rem 2rem;
@@ -105,14 +105,15 @@
     }
 
     .btn {
-      display: inline-block;
+      /* display: inline-block; <-- закомментировано, как ты просил */
       padding: 0.75rem 1.5rem;
-      background: #2196F3;
+      background: #2196F3; /* Primary blue */
       color: white;
       border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s ease;
+      text-align: center;
     }
 
     .btn:hover {
@@ -185,19 +186,17 @@
     /* Contact Section */
     #contact form {
       display: flex;
-      flex-direction: column;
+      flex-wrap: nowrap;
       align-items: center;
-      gap: 0.5rem;
+      gap: 1rem;
       width: 100%;
     }
 
     #contact input[type="email"] {
       padding: 0.5rem;
-      width: 100%;
-      max-width: 300px;
+      width: 250px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      font-size: 1rem;
     }
 
     #contact button[type="submit"] {
@@ -207,9 +206,6 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      font-size: 1rem;
-      width: 100%;
-      max-width: 300px;
     }
 
     /* Footer */
@@ -232,25 +228,31 @@
         font-size: 2.2rem;
       }
 
-      .hero-buttons,
-      .community ul,
       .hero-buttons {
         flex-direction: column;
         align-items: center;
       }
 
-      .btn,
+      .hero-buttons .btn,
+      .hero-buttons .btn-outline {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        margin: 0.5rem 0;
+      }
+
+      #contact form {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       #contact input[type="email"],
       #contact button[type="submit"] {
         width: 100%;
         max-width: 300px;
-        margin-top: 0.5rem;
-      }
-
-      .hero-buttons .btn {
-        text-align: center;
       }
     }
+
   </style>
 </head>
 <body>
@@ -324,10 +326,10 @@
 <section class="container">
   <h2>Roadmap</h2>
   <ol>
-    <li><strong></strong> Planning & Requirements – Define MVP features, identify pilot regions, set up repository and documentation</li>
-    <li><strong></strong> Core Development – Build ETL pipeline with Apache Airflow, develop dashboard with Dash, add support for CSV, JSON, APIs</li>
-    <li><strong></strong> Pilot Testing – Deploy in partner regions, collect feedback, optimize performance</li>
-    <li><strong></strong> Community Launch – Publish documentation, create tutorials, invite contributors</li>
+    <li><strong>Phase 1:</strong> Planning & Requirements – Define MVP features, identify pilot regions, set up repository and documentation</li>
+    <li><strong>Phase 2:</strong> Core Development – Build ETL pipeline with Apache Airflow, develop dashboard with Dash, add support for CSV, JSON, APIs</li>
+    <li><strong>Phase 3:</strong> Pilot Testing – Deploy in partner regions, collect feedback, optimize performance</li>
+    <li><strong>Phase 4:</strong> Community Launch – Publish documentation, create tutorials, invite contributors</li>
   </ol>
 </section>
 
@@ -352,7 +354,7 @@
     <li>✅ Help with documentation</li>
     <li>✅ Test the system in your region</li>
   </ul>
-  <a href="https://github.com/greggubarev/opensana/ " target="_blank" class="btn">GitHub Repository</a>
+  <a href="https://github.com/greggubarev/opensana/ " target="_blank" class="btn" style="display: inline-block;">GitHub Repository</a>
 </section>
 
 <!-- Contact Section -->
@@ -360,10 +362,10 @@
   <h2>Contact Us</h2>
   <p>Stay updated with our progress or get involved in early testing.</p>
 
-  <!-- Подписка через mailto -->
-  <form action="#" method="GET">
+  <!-- Форма подписки -->
+  <form action="#" method="GET" onsubmit="window.location.href='mailto:team@opensana.org?subject=Subscription Request&body=Hi OpenSana Team, I want to stay updated.'; return false;">
     <input type="email" name="email" placeholder="Your email address" required />
-    <button type="submit" onclick="window.location.href='mailto:team@opensana.org?subject=OpenSana Subscription&body=Hello OpenSana Team, I would like to stay updated about your progress.'">Subscribe</button>
+    <button type="submit">Subscribe</button>
   </form>
 
   <p>Email us at: <a href="mailto:team@opensana.org">team@opensana.org</a></p>
